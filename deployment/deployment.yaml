@@ -19,3 +19,10 @@ spec:
         image: linogaliana/application:v0.0.3
         ports:
         - containerPort: 5000
+        env:
+          - name: MLFLOW_TRACKING_URI
+            value: https://user-lgaliana-mlflow.user.lab.sspcloud.fr
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
