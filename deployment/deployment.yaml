@@ -1,4 +1,3 @@
-#| filename: "deployment/deployment.yaml"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,7 +18,7 @@ spec:
       - name: titanic
         image: linogaliana/application:v0.0.3
         ports:
-        - containerPort: 5000
+        - containerPort: 8000
         env:
         - name: JETON_API
           valueFrom:
@@ -29,6 +28,6 @@ spec:
         - name: MLFLOW_TRACKING_URI
           value: https://user-${USERNAME}-mlflow.user.lab.sspcloud.fr
         resources:
-        limits:
+          limits:
             memory: "2Gi"
             cpu: "1000m"
