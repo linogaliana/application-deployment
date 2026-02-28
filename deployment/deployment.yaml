@@ -26,7 +26,7 @@ spec:
               name: api-jeton
               key: JETON_API
         - name: MLFLOW_TRACKING_URI
-          value: https://user-${USERNAME}-mlflow.user.lab.sspcloud.fr
+          value: https://user-lgaliana-mlflow.user.lab.sspcloud.fr
         resources:
           limits:
             memory: "2Gi"
