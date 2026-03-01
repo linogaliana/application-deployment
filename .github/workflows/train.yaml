@@ -45,5 +45,4 @@ jobs:
 
       - name: Train Model
         run: |
-          ls
           uv run train.py --n_trees=${{ matrix.model-config.n_trees }} --max_features=${{ matrix.model-config.max_features }}
