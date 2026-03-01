@@ -40,9 +40,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-            repository: 'ensae-reproductibilite/application'
-            ref: appli24
 
       - name: Train Model
         run: |
